@@ -9,7 +9,7 @@ module.exports = {
   mode: 'development',
   entry: ['./src/main'],
   output: {
-    path: path.join(__dirname, 'dist'),
+    path: path.join(__dirname, 'doc'),
     asyncChunks: true,
     filename: '[name].[hash].js',
     chunkFilename: '[hash].js',
