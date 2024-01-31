@@ -1,0 +1,137 @@
+// Font：Noto Sans TC
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;300;400;500;600;700&display=swap');
+/* ----------TEXT----------- */
+html {
+  font-size: 16px;
+  color: $color-white;
+}
+body {
+  font-family: $font-set;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p,
+.p,
+a,
+b,
+small {
+  font: inherit;
+  color: inherit;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0.8px;
+  text-transform: none;
+}
+/* 62 */
+h1, .h1 { font-size: 62px; }
+/* 48 */
+h2, .h2 { font-size: 48px; }
+/* 40 */
+h3, .h3 { font-size: 40px; }
+/* 30 */
+h4, .h4 { font-size: 30px; }
+/* 24 */
+h5, .h5 { font-size: 24px; }
+/* 20 */
+h6, .h6 { font-size: 20px; }
+/* 18 */
+.p-18 { font-size: 18px; }
+/* 16 */
+p, .p { font-size: 16px; }
+a {
+  font-size: 16px;
+  text-decoration: none;
+}
+/* 14 */
+small, .small { font-size: 14px; }
+/* 12 */
+.supersmall { font-size: 12px; }
+
+
+// letter-spacing
+.ls1 { letter-spacing: 1px; }
+.ls2 { letter-spacing: 2px; }
+.ls3 { letter-spacing: 3px; }
+.ls4 { letter-spacing: 4px; }
+.ls5 { letter-spacing: 5px; }
+.ls6 { letter-spacing: 6px; }
+.ls7 { letter-spacing: 7px; }
+.ls8 { letter-spacing: 8px; }
+.ls9 { letter-spacing: 9px; }
+.ls10 { letter-spacing: 10px; }
+
+
+// font color
+.txt-prime { color: $color-prime; }
+.txt-dark_prime { color: $color-dark_prime; }
+.txt-light_prime { color: $color-light_prime;}
+.txt-sub_prime { color: $color-sub_prime }
+.txt-dark_sub_prime { color: $color-dark_sub_prime }
+
+.txt-dark_gray { color: $color-dark_gray; }
+.txt-gray { color: $color-gray; }
+.txt-pale_gray { color: $color-pale_gray; }
+.txt-white { color: $color-white; }
+.txt-black { color: $color-black; }
+
+
+.txt-link { text-decoration: underline; }
+
+
+.txt-thin { font-weight: 300; }
+.txt-regular { font-weight: 400; }
+.txt-medium { font-weight: 500; }
+.txt-bold { font-weight: 500; }
+.txt-superbold { font-weight: 800; }
+b, strong { font-weight: bolder; }
+
+.txt-left { text-align: left; }
+.txt-right { text-align: right; }
+.txt-center { text-align: center; }
+
+.txt-up { text-transform: uppercase; }
+
+/* ----------RWD----------------------- */
+@media screen and (max-width: 1440px) {
+  h1, .h1 { font-size: 3.2rem; }
+}
+@media screen and (max-width: 1366px) {
+}
+@media screen and (max-width: 1280px) {
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 1023px) {
+  h1, .h1 { font-size: 2.8rem; }
+  h2, .h2 { font-size: 2.2rem; }
+  h3, .h3 { font-size: 1.8rem; }
+  h4, .h4 { font-size: 1.5rem; }
+  h5, .h5 { font-size: 1.15rem; }
+}
+@media screen and (max-width: 768px) {
+  html { font-size: 14px; }
+  h1, .h1 { font-size: 2.3rem; }
+  h2, .h2 { font-size: 2rem; }
+  h3, .h3 { font-size: 1.5rem; }
+  h4, .h4 { font-size: 1.3rem; }
+  h5, .h5 { font-size: 1.2rem; }
+  h6, .h6 { font-size: 1.1rem; }
+  small, .small { font-size: .95rem; }
+}
+@media screen and (max-width: 620px) {
+}
+@media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 425px) {
+}

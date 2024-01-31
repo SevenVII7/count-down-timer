@@ -1,0 +1,160 @@
+@import "./_variable.scss";
+
+/* TRANSITION */
+	@mixin transition($transition...) {
+		-moz-transition:    $transition;
+		-o-transition:      $transition;
+		-webkit-transition: $transition;
+		transition:         $transition;
+	}
+	@mixin transition-property($property...) {
+		-moz-transition-property:    $property;
+		-o-transition-property:      $property;
+		-webkit-transition-property: $property;
+		transition-property:         $property;
+	}
+	@mixin transition-duration($duration...) {
+		-moz-transition-property:    $duration;
+		-o-transition-property:      $duration;
+		-webkit-transition-property: $duration;
+		transition-property:         $duration;
+	}
+	@mixin transition-timing-function($timing...) {
+		-moz-transition-timing-function:    $timing;
+		-o-transition-timing-function:      $timing;
+		-webkit-transition-timing-function: $timing;
+		transition-timing-function:         $timing;
+	}
+	@mixin transition-delay($delay...) {
+		-moz-transition-delay:    $delay;
+		-o-transition-delay:      $delay;
+		-webkit-transition-delay: $delay;
+		transition-delay:         $delay;
+	}
+
+/* TRANSFORM */
+	// generic transform
+	@mixin transform($transforms) {
+		   -moz-transform: $transforms;
+			 -o-transform: $transforms;
+			-ms-transform: $transforms;
+		-webkit-transform: $transforms;
+			    transform: $transforms;
+	}
+	// rotate
+	@mixin rotate ($deg) {
+	  	@include transform(rotate(#{$deg}deg));
+	}
+
+	// scale
+	@mixin scale($x, $y) {
+		@include transform(scale($x, $y));
+	}
+	// translate
+	@mixin translate ($x, $y) {
+	   	@include transform(translate($x, $y));
+	}
+	// translateZ
+	@mixin translateZ ($z) {
+	   	@include transform(translateZ($z));
+	}
+	// skew
+	@mixin skew ($x, $y) {
+	  	 @include transform(skew(#{$x}deg, #{$y}deg));
+	}
+	//transform origin
+	@mixin transform-origin ($origin) {
+		-moz-transform-origin: $origin;
+			 -o-transform-origin: $origin;
+			-ms-transform-origin: $origin;
+		-webkit-transform-origin: $origin;
+			  transform-origin: $origin;
+	}
+
+/* ANIMATION */
+	@mixin animation ($animation, $duration, $delay, $easing, $fillmode) {
+	    -webkit-animation-delay: $delay;
+	    -webkit-animation-duration: $duration;
+	    -webkit-animation-name: $animation;
+	    -webkit-animation-timing-function: $easing;
+	    -webkit-animation-fill-mode: $fillmode;
+
+	    -moz-animation-delay: $delay;
+	    -moz-animation-duration: $duration;
+	    -moz-animation-name: $animation;
+	    -moz-animation-timing-function: $easing;
+	    -moz-animation-fill-mode: $fillmode;
+
+	    -o-animation-delay: $delay;
+	    -o-animation-duration: $duration;
+	    -o-animation-name: $animation;
+	    -o-animation-timing-function: $easing;
+	    -o-animation-fill-mode: $fillmode;
+
+	    animation-delay: $delay;
+	    animation-duration: $duration;
+	    animation-name: $animation;
+	    animation-timing-function: $easing;
+	    animation-fill-mode: $fillmode;
+	}
+	@mixin animation-name($animation-name) {
+	  	-webkit-animation-name: $animation-name;
+	     -moz-animation-name: $animation-name;
+	      -ms-animation-name: $animation-name;
+	       -o-animation-name: $animation-name;
+	          animation-name: $animation-name;
+	}
+	@mixin keyframes($animation-name) {
+	  @-webkit-keyframes #{$animation-name} {
+	    @content;
+	  }
+
+	  @-moz-keyframes #{$animation-name} {
+	    @content;
+	  }
+
+	  @-ms-keyframes #{$animation-name} {
+	    @content;
+	  }
+
+	  @-o-keyframes #{$animation-name} {
+	    @content;
+	  }
+
+	  @keyframes #{$animation-name} {
+	    @content;
+	  }
+	}
+
+/* SCROLLBAR */
+	@mixin scrollbar() {
+		position: relative;
+		overflow-y: auto;
+		scrollbar-width: thin;
+		scrollbar-color: light;
+		&::-webkit-scrollbar{width: 2px; }
+		&::-webkit-scrollbar-thumb{background-color: $color-blue; }
+		&::-webkit-scrollbar-track{background-color: $color-light-grey; }
+	}
+
+
+/* ----------Extend---------- */
+/*background*/
+	%background_100 {
+		background-size: 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	%background_100_100 {
+		background-size: 100% 100%;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	%background_cover {
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	

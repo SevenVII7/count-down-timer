@@ -1,0 +1,70 @@
+// helper
+@import './helper/_variable.scss';
+@import './helper/_mixin.scss';
+
+// setting
+@import './setting/_reset.scss';
+@import './setting/_font.scss';
+@import './setting/_grid.scss';
+@import './setting/_form.scss';
+@import './setting/_animation.scss';
+
+
+// @import '../lib/fontawesome/css/all.css';
+
+@import './public';
+
+#page{
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .controller{
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: end;
+        align-items: center;
+        input{
+            width: 80px;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: #333;
+            color: #777;
+            border: 1px solid rgba(0,0,0,0);
+            transition: .2s;
+            &::placeholder {
+                color: #555;
+            }
+            &:focus{
+                border-color: $color-prime;
+            }
+        }
+        button{
+            width: 80px;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+            background-color: $color-prime;
+            transition: .2s;
+            &:hover{
+                transform: scale(1.05);
+            }
+        }
+    }
+    .show{
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            font-size: 22vw;
+            font-weight: 600;
+            color: $color-prime;
+            filter: brightness(340%);
+        }
+    }
+}

@@ -1,0 +1,140 @@
+/* ----------BLOCK---------- */
+.fleft{float:left; }
+.fright{float: right; }
+.cf:after{
+    content:'';
+    display: table;
+    clear:both;
+}
+.row{
+    width: 100%;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+
+
+.w800,
+.w900,
+.w1000,
+.w1100,
+.w1200,
+.w1300,
+.w1400,
+.w1600{
+    width: 80%;
+    margin:0 auto;
+}
+.w800{ max-width: 800px; }
+.w900{ max-width: 900px; }
+.w1000{ max-width: 1000px; }
+.w1100{ max-width: 1100px; }
+.w1200{ max-width: 1200px; }
+.w1300{ max-width: 1300px; }
+.w1400{ max-width: 1400px; }
+.w1600{ max-width: 1600px; }
+
+.col100,
+.col90,
+.col80,
+.col75,
+.col70,
+.col65,
+.col66,
+.col60,
+.col50,
+.col40,
+.col35,
+.col33,
+.col30,
+.col25,
+.col20,
+.col15,
+.col05{
+    display: inline-block;
+    vertical-align: top;
+   
+}
+.col100{ width: 100%; }
+.col90{ width: 90%; }
+.col80{ width: 80%; }
+.col75{ width: 75%; }
+.col70{ width: 70%; }
+.col66{ width: 66.6666%; }
+.col65{ width: 65%; }
+.col60{ width: 60%; }
+.col50{ width: 50%; }
+.col50:nth-child(odd){ margin-left: 0px; }
+.col45{ width: 45%; }
+.col40{ width: 40%; }
+.col35{ width: 35%; }
+.col30{ width: 30%; }
+.col33{ width: 33.3333%; }
+.col25{ width: 25%; }
+.col20{ width: 20%; }
+.col15{ width: 15%; }
+.col05{ width: 05%; }
+
+.ib-middle{
+    display: inline-block;
+    vertical-align: middle;
+}
+.ib-top{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.main_padding{ padding: 5% 0 }
+.main_padding-b{ padding-bottom: 5%; }
+.main_padding-t{ padding-top: 5%; }
+.main_margin{ margin: 5% 0 }
+.main_margin-b{ margin-bottom: 5%; }
+.main_margin-t{ margin-top: 5%; }
+
+.header-top{ position: relative; }
+.header-top::before{
+    content: "";
+    display: block;
+    height: 78px;
+    position: relative;
+}
+
+/* ----------RWD----------------------- */
+@media screen and (max-width: 1440px){
+
+}
+@media screen and (max-width: 1366px){
+
+}
+@media screen and (max-width: 1280px){
+
+}
+@media screen and (max-width: 1024px){
+
+}
+@media screen and (max-width: 1023px){
+    .w800,
+    .w900,
+    .w1000,
+    .w1100,
+    .w1200,
+    .w1300,
+    .w1400,
+    .w1600{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 768px){
+    .main_padding{ padding: 50px 0 }
+    .main_padding-b{ padding-bottom: 50px; }
+    .main_padding-t{ padding-top: 50px; }
+    .main_margin{ margin: 50px 0 }
+    .main_margin-b{ margin-bottom: 50px; }
+    .main_margin-t{ margin-top: 50px; }
+}
+@media screen and (max-width: 620px){
+
+}
+@media screen and (max-width: 480px){
+
+}

@@ -1,0 +1,38 @@
+{
+  "name": "wpt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "webpack serve",
+    "build": "vue-tsc --noEmit && webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.3.11",
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "mini-css-extract-plugin": "^2.7.6",
+    "node-sass": "npm:sass@^1.69.5",
+    "raw-loader": "^4.0.2",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "ts-loader": "^9.4.4",
+    "vue-loader": "^17.3.1",
+    "vue-template-compiler": "^2.7.15",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "dependencies": {
+    "typescript": "^5.1.6",
+    "vue": "^3.3.11",
+    "vue-router": "^4.2.5",
+    "vue-tsc": "^1.8.25"
+  }
+}
