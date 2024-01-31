@@ -9,11 +9,11 @@ module.exports = {
   mode: 'development',
   entry: ['./src/main'],
   output: {
-    path: path.join(__dirname, 'doc'),
+    path: path.join(__dirname, 'docs'),
     asyncChunks: true,
-    filename: '[name].[hash].js',
-    chunkFilename: '[hash].js',
-    assetModuleFilename: '[name].[hash][ext]'
+    filename: 'js/[name].[hash].js',
+    chunkFilename: 'js/[hash].js',
+    assetModuleFilename: 'assets/[name].[hash][ext]'
   },
   resolve : {
     extensions : ['.tsx', '.ts', '.js', '.vue'],
