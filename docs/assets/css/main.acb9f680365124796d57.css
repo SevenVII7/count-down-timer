@@ -301,6 +301,10 @@ small, .small {
   color: #222222;
 }
 
+.txt-red {
+  color: #e83434;
+}
+
 .txt-link {
   text-decoration: underline;
 }
@@ -929,4 +933,8 @@ input[type=file]:not(old) {
   font-weight: 600;
   color: rgb(237, 151, 52);
   filter: brightness(340%);
+}
+#page .show p.red {
+  color: #e83434;
+  filter: brightness(150%);
 }

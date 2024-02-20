@@ -29,7 +29,7 @@
       <button v-else @click="stopCountdown">Stop</button>
     </div>
     <div class="show">
-      <p>
+      <p :class="[remainingTime <= 1 && isStart ? 'red' : '']" :style="[remainingTime <= 1 && isStart? 'transition-duration: .5s; transition-delay: .5s;':'']">
         {{timerShow}}
       </p>
     </div>
@@ -39,6 +39,7 @@
 import { ref } from 'vue'
 
 const secondsSetting = ref(3)
+const remainingTime = ref(0)
 const timerShow = ref(timerString(secondsSetting.value))
 const isStart = ref(false)
 const isRepeat = ref([])
@@ -57,18 +58,19 @@ function printTimer(seconds: number) {
 }
 
 function startCountdown() {
-  let remainingTime = secondsSetting.value;
+  remainingTime.value = secondsSetting.value;
   isStart.value = true
-  printTimer(remainingTime)
+  printTimer(remainingTime.value)
   interval.value = setInterval(() => {
-    remainingTime -= 1;
-    if (remainingTime < 0) {
+    remainingTime.value -= 1;
+    if (remainingTime.value < 0) {
       stopCountdown()
+      remainingTime.value = secondsSetting.value;
       if(isRepeat.value.length > 0){
         startCountdown()
       }
     } else {
-      printTimer(remainingTime)
+      printTimer(remainingTime.value)
     }
   }, 1000);
 }

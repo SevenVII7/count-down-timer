@@ -65,6 +65,10 @@
             font-weight: 600;
             color: $color-prime;
             filter: brightness(340%);
+            &.red{
+                color: $color-red;
+                filter: brightness(150%);
+            }
         }
     }
 }
